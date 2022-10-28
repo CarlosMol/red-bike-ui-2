@@ -15,7 +15,7 @@ phases:
     commands:
       - echo Buil completed on `date`
 # reports:
-# TODO: Agregar reportes de pruebas unitarias
+# TODO: Agregarr reportes de pruebas unitarias
 artifacts:
   files:
     - '**/*'
