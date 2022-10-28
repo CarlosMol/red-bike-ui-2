@@ -7,13 +7,17 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install -g @angular/cli@12.0
+  test:
+    commands:
+      - echo Running unit tests...
+      - ng test
   build:
     commands:
-      - echo Build sated on `date`
+      - echo Build started on `date`
       - ng build
   post_build:
     commands:
-      - echo Buil completed on `date`
+      - echo Build completed on `date`
 # reports:
 # TODO: Agregarr reportes de pruebas unitarias
 artifacts:
