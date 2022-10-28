@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli
+  build:
+    commands:
+      - echo Build sated on `date`
+      - ng build
+  post_build:
+    commands:
+      - echo Buil completed on `date`
+# reports:
+# TODO: Agregar reportes de pruebas unitarias
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes
