@@ -9,8 +9,8 @@ phases:
       - npm install -g @angular/cli@12.0
   build:
     commands:
-      - echo Running unit tests...
-      - ng test -- --watch=false --browsers=ChromeHeadless
+      # - echo Running unit tests...
+      # - ng test -- --watch=false --browsers=ChromeHeadless
       - echo Build started on `date`
       - ng build
   post_build:
