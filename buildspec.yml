@@ -6,7 +6,7 @@ phases:
       - echo Installing node 16.10
       - echo Installing source NPM dependencies...
       - npm install
-      - npm install -g @angular/cli@11.2.2 npm@latest
+      - npm install -g @angular/cli@12.0
   build:
     commands:
       - echo Build sated on `date`
